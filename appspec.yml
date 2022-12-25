@@ -1,5 +1,11 @@
 version: 0.0
 os: linux
 files:
-	- source: /
-	destination: /var/www/html/myweb
+  - source: /
+    destination: /var/www/html/myweb
+
+#hooks:
+#  BeforeInstall:
+#	- location: scripts/install_dependencies
+#	  timeout: 3000
+#	  runas: root
